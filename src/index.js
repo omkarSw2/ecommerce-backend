@@ -1,5 +1,4 @@
-
-const { ConnectDB } = require("./db");
+const { ConnectDB } = require("./db/index");
 require("dotenv").config();
 
 const { app } = require("./app");
@@ -13,3 +12,4 @@ app.listen(process.env.PORT || 8080, async () => {
     console.log("Connection Error on Express App ", error);
   }
 });
+  
